@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consigli Televisori</title>
+</head>
+<body>
+    <h1>Consigli per l'acquisto del televisore</h1>
+    <form action="televisore.php" method="get">
+        Marca: <input type="text" name="marca" required><br><br>
+        Modello: <input type="text" name="modello" required><br><br>
+        Numero porte HDMI: <input type="number" name="porte_hdmi" min="1" required><br><br>
+        Refresh rate (Hz): <input type="number" name="refresh_rate" min="1" required><br><br>
+        Risoluzione:
+        <select name="risoluzione" id="risoluzione">
+            <option value="HD Ready">HD Ready</option>
+            <option value="Full HD">Full HD</option>
+            <option value="Ultra HD">Ultra HD</option>
+            <option value="4K">4K</option>
+        </select><br><br>
+        <input type="submit" value="Invia">
+    </form>
+</body>
+</html>
